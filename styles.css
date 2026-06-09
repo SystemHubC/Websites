@@ -333,3 +333,4 @@ a { color: inherit; text-decoration: none; }
   .hero-actions, .cta-actions { flex-direction: column; }
   .footer { flex-direction: column; align-items: flex-start; }
 }
+
