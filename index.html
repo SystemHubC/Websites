@@ -22,8 +22,10 @@
     </div>
     <nav>
       <a href="#services">услуги</a>
+      <a href="#process">этапы</a>
       <a href="#stack">технологии</a>
       <a href="#works">работы</a>
+      <a href="#faq">faq</a>
       <a href="#contact">контакты</a>
     </nav>
   </header>
@@ -48,7 +50,7 @@
         <div class="terminal-head">
           <span></span><span></span><span></span>
         </div>
-        <pre><code>$ whoami
+        <pre><code id="terminalCode">$ whoami
 AndreyCatser
 
 $ stack --show
@@ -69,6 +71,13 @@ $ mission
 облегчают жизнь
 продавцам.</code></pre>
       </aside>
+    </section>
+
+    <section class="status-strip" aria-label="Кратко о разработке">
+      <div><span>01</span><b>ТЗ или идея</b><em>можно даже без готового описания</em></div>
+      <div><span>02</span><b>Логика плагина</b><em>обсуждаем сценарии и edge-cases</em></div>
+      <div><span>03</span><b>Код и тесты</b><em>Python / JS / API / автоматизация</em></div>
+      <div><span>04</span><b>Поддержка</b><em>доработки, фиксы и обновления</em></div>
     </section>
 
     <section class="section about-grid">
@@ -116,6 +125,56 @@ $ mission
           <h3>Интеграции и инструменты</h3>
           <p>Связка с API, внешними сайтами и системами, служебные утилиты, панели управления и полезные вспомогательные решения.</p>
         </article>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="section-heading">
+        <span class="code-tag">workflow.yaml</span>
+        <h2>Как проходит заказ</h2>
+      </div>
+      <div class="timeline">
+        <article>
+          <span>step 01</span>
+          <h3>Разбираем задачу</h3>
+          <p>Ты описываешь, что должен делать плагин. Если ТЗ нет — я помогу разложить идею на понятную логику.</p>
+        </article>
+        <article>
+          <span>step 02</span>
+          <h3>Согласуем механику</h3>
+          <p>Определяем события, команды, настройки, ограничения, API и то, как плагин должен вести себя в реальных заказах.</p>
+        </article>
+        <article>
+          <span>step 03</span>
+          <h3>Пишу и тестирую</h3>
+          <p>Собираю рабочее решение, проверяю сценарии и убираю лишний хаос, чтобы плагин был удобным.</p>
+        </article>
+        <article>
+          <span>step 04</span>
+          <h3>Передаю и поддерживаю</h3>
+          <p>Ты получаешь готовый плагин, инструкцию и возможность заказать доработки, если понадобится расширить функционал.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <span class="code-tag">ideas.list</span>
+        <h2>Какие плагины можно заказать</h2>
+      </div>
+      <div class="idea-board">
+        <div>автовыдача товаров</div>
+        <div>умные автоответы</div>
+        <div>уведомления в Telegram</div>
+        <div>интеграции с API</div>
+        <div>статистика продаж</div>
+        <div>обработка заказов</div>
+        <div>проверки оплат и условий</div>
+        <div>админ-команды</div>
+        <div>панели управления</div>
+        <div>парсинг и синхронизация</div>
+        <div>антиспам и фильтры</div>
+        <div>кастомная бизнес-логика</div>
       </div>
     </section>
 
@@ -176,6 +235,31 @@ $ mission
       </div>
     </section>
 
+    <section class="section" id="faq">
+      <div class="section-heading">
+        <span class="code-tag">questions.md</span>
+        <h2>FAQ</h2>
+      </div>
+      <div class="faq-grid">
+        <details open>
+          <summary>Можно заказать плагин без готового ТЗ?</summary>
+          <p>Да. Можно написать идею обычными словами, а дальше я помогу превратить её в понятный список функций.</p>
+        </details>
+        <details>
+          <summary>Под какие системы делаешь плагины?</summary>
+          <p>FunPay Cardinal, FunPay Pulse, FunPay Tools. По задаче можно обсудить и другие интеграции.</p>
+        </details>
+        <details>
+          <summary>На чём пишешь?</summary>
+          <p>Основной стек — Python и JavaScript. Также могу подключать API, делать обработчики событий, команды, конфиги и вспомогательные инструменты.</p>
+        </details>
+        <details>
+          <summary>Можно доработать уже существующий плагин?</summary>
+          <p>Да, если код можно нормально прочитать и поддерживать. Исправления, новые функции, рефакторинг и улучшение логики — обсуждаются.</p>
+        </details>
+      </div>
+    </section>
+
     <section class="section cta-section" id="contact">
       <div class="cta panel">
         <div>
@@ -185,6 +269,11 @@ $ mission
             Не стесняйся и заказывай. Если у тебя есть идея, задача или готовое ТЗ — напиши,
             и мы обсудим реализацию.
           </p>
+          <div class="cta-pills">
+            <span>быстрый разбор идеи</span>
+            <span>понятная логика</span>
+            <span>поддержка после заказа</span>
+          </div>
         </div>
         <a class="button primary large" href="https://t.me/AndreyCatser" target="_blank" rel="noreferrer">Написать в Telegram</a>
       </div>
